@@ -1,0 +1,2 @@
+1;2022-10-20;123;2;plimbare,10
+3;2022-12-10;35;23; plimbare seara,12;alergat,21; plimbare seara,2

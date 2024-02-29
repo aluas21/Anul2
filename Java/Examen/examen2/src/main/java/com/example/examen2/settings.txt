@@ -1,0 +1,4 @@
+ repo_type: text
+ repo_file1: /Volumes/Macintosh HD/Desktop/PROGRAMARE/MAP/examenTxt/examen2/src/main/java/com/example/examen2/activitati.txt
+ repo_file2: /Volumes/Macintosh HD/Desktop/PROGRAMARE/MAP/a4-aluas21/src/main/java/Programari.txt
+            

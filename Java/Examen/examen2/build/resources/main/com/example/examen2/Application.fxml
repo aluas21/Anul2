@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ComboBox?>
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="com.example.examen2.controllers.MainController">
+    <!--<right>-->
+    <!--   <Button mnemonicParsing="false" onAction="#handleOption1" text="Optiune1" BorderPane.alignment="CENTER" />-->
+    <!--</right>-->
+    <center>
+        <!--   <Label fx:id="welcomeText" text="Bun venit!" layoutX="100" layoutY="50"/>-->
+        <!-- Adăugarea unui TabPane în partea de jos (bottom) -->
+        <TabPane prefHeight="200.0" prefWidth="200.0">
+            <!-- Adăugarea de file la TabPane -->
+            <tabs>
+                <Tab text="Adaugare Activitate">
+                    <VBox alignment="CENTER" spacing="10">
+                        <Label text="Formular adugare entitatea activitate" />
+                        <HBox alignment="CENTER" spacing="10">
+                            <Label text="DATA:" />
+                            <TextField fx:id="DataField" promptText="Introduceți DATA" />
+                        </HBox>
+                        <HBox alignment="CENTER" spacing="10">
+                            <Label text="ORE DE SOMN:" />
+                            <TextField fx:id="OraField" promptText="Introduceți ORE DE SOMN" />
+                        </HBox>
+                        <HBox alignment="CENTER" spacing="10">
+                            <Label text="NR. PASI:" />
+                            <TextField fx:id="NrPasiField" promptText="Introduceți NR. PASI" />
+                        </HBox>
+                        <HBox alignment="CENTER" spacing="10">
+                            <Label text="DESCRIERE ACITIVATE" />
+                            <ComboBox fx:id="comboboxDescriere">
+
+                            </ComboBox>
+                        </HBox>
+                        <HBox alignment="CENTER" spacing="10">
+                            <Label text="DURATA ACTIVITATE:" />
+                            <TextField fx:id="Minute" promptText="Introduceți DURATA ACTIVITATE" />
+                        </HBox>
+
+                        <Button onAction="#adauga" text="ADAUGA"/>
+
+                    </VBox>
+
+                </Tab>
+
+                <Tab text="OPTIUNE 2">
+                    <BorderPane>
+                        <top>
+                            <HBox alignment="CENTER">
+                                <Label text="ACTIVITATILE" textFill="#82481d">
+                                    <font>
+                                        <Font size="23.0" />
+                                    </font></Label>
+                            </HBox>
+                        </top>
+                        <center>
+                            <HBox alignment="CENTER">
+                                <ListView fx:id="listActivitati" prefWidth="400" />
+                            </HBox>
+                        </center>
+                    </BorderPane>
+
+                </Tab>
+
+                <Tab text="OPTIUNE 3">
+                    <BorderPane>
+                        <top>
+                            <HBox alignment="CENTER">
+                                <Label text="ACTIVITATILE" textFill="#82481d">
+                                    <font>
+                                        <Font size="23.0" />
+                                    </font></Label>
+                            </HBox>
+                        </top>
+                        <center>
+                            <HBox alignment="CENTER">
+                                <ListView fx:id="listActivitatiFiltare" prefWidth="400" />
+                            </HBox>
+                        </center>
+                        <bottom>
+                            <VBox alignment="CENTER" spacing="10">
+
+                                <Label text="Filtreaza intre date" />
+                                <HBox alignment="CENTER" spacing="10">
+                                    <Label text="DATA:" />
+                                    <TextField fx:id="minuteMin" promptText="Introduceți min minime" />
+                                </HBox>
+                                <HBox alignment="CENTER" spacing="10">
+                                    <Label text="ORE DE SOMN:" />
+                                    <TextField fx:id="minuteMax" promptText="Introduceți maxime" />
+                                </HBox>
+                                <Button onAction="#filtreazaIntre" text="Filtreaza"/>
+                            </VBox>
+                        </bottom>
+                    </BorderPane>
+
+                </Tab>
+
+            </tabs>
+        </TabPane>
+    </center>
+</BorderPane>
