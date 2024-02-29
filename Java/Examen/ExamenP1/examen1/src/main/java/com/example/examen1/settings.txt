@@ -1,4 +1,0 @@
- repo_type: bin
- repo_file1: /Volumes/Macintosh HD/Desktop/PROGRAMARE/MAP/ExamenP1/examen1/src/main/java/com/example/examen1/RepoProdusBin.txt
- repo_file2: /Volumes/Macintosh HD/Desktop/PROGRAMARE/MAP/a4-aluas21/src/main/java/Programari.txt
-            
