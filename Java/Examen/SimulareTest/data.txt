@@ -1,0 +1,4 @@
+BMI{data='2'value=20.0}
+BMI{data='3'value=21.0}
+BP{data='2'systolicValue=120, diastolicValue=70}
+BP{data='3'systolicValue=120, diastolicValue=70}
