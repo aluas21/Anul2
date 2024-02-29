@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ComboBox?>
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="com.example.practic.controllers.MainController">
+    <!--<right>-->
+    <!--   <Button mnemonicParsing="false" onAction="#handleOption1" text="Optiune1" BorderPane.alignment="CENTER" />-->
+    <!--</right>-->
+    <center>
+        <!--   <Label fx:id="welcomeText" text="Bun venit!" layoutX="100" layoutY="50"/>-->
+        <!-- Adăugarea unui TabPane în partea de jos (bottom) -->
+        <TabPane prefHeight="200.0" prefWidth="200.0">
+            <!-- Adăugarea de file la TabPane -->
+            <tabs>
+                <Tab text="OPTIUNE 1">
+                    <VBox alignment="CENTER" spacing="10">
+                        <Label text="ADAUGARE QUIZ" />
+                        <HBox spacing="10" alignment="CENTER">
+                            <Label text="Text" />
+                            <TextField fx:id="textField" />
+                        </HBox>
+                        <HBox spacing="10" alignment="CENTER">
+                            <Label text="RaspunsA" />
+                            <TextField fx:id="RaspunsAField" />
+                        </HBox>
+                        <HBox spacing="10" alignment="CENTER">
+                            <Label text="RaspunsB" />
+                            <TextField fx:id="RaspunsBField" />
+                        </HBox>
+                        <HBox spacing="10" alignment="CENTER">
+                            <Label text="RaspunsC" />
+                            <TextField fx:id="RaspunsCField" />
+                        </HBox>
+                        <HBox spacing="10" alignment="CENTER">
+                            <Label text="RaspunsCorect" />
+                            <TextField fx:id="RaspunsCorectField" />
+                        </HBox>
+                        <HBox spacing="10" alignment="CENTER">
+                            <Label text="Punctaj" />
+                            <TextField fx:id="PunctajField" />
+                        </HBox>
+
+
+                        <Button text="Adauga" onAction="#handleAdd" />
+                    </VBox>
+
+                </Tab>
+
+                <Tab text="OPTIUNE 2">
+                    <BorderPane>
+                        <top>
+                            <HBox alignment="CENTER">
+                                <Label text="AFISARE" textFill="#82481d">
+                                    <font>
+                                        <Font size="23.0" />
+                                    </font></Label>
+                            </HBox>
+                        </top>
+                        <center>
+                            <HBox alignment="CENTER">
+                                <ListView fx:id="listViewQuiz" prefWidth="500"/>
+                            </HBox>
+                        </center>
+                    </BorderPane>
+
+                </Tab>
+
+                <Tab text="OPTIUNE 3">
+                    <BorderPane>
+                        <top>
+                            <HBox alignment="CENTER">
+                                <Label text="GENERARE QUIZ" textFill="#82481d">
+                                    <font>
+                                        <Font size="23.0" />
+                                    </font></Label>
+                            </HBox>
+                        </top>
+                        <center>
+                            <HBox alignment="CENTER">
+                                <ListView fx:id="listViewQuizGen" prefWidth="500"/>
+                            </HBox>
+                        </center>
+                        <bottom>
+                            <VBox alignment="CENTER" spacing="10">
+                                <Label text="GENERATE QUIZ"/>
+                                <HBox alignment="CENTER" spacing="10">
+                                    <Label text="Punctaj Minim." />
+                                    <TextField fx:id="PunctajMinField"/>
+                                    <Label text="Punctaj Maxim." />
+                                    <TextField fx:id="PunctajMaxField"/>
+                                    <Label text="Nr Intrebari"/>
+                                    <TextField fx:id="NrIntrebariField"/>
+                                </HBox>
+                                <Button onAction="#Filtreaza" text="FILTREAZA"/>
+                            </VBox>
+
+                        </bottom>
+                    </BorderPane>
+
+
+                </Tab>
+
+            </tabs>
+        </TabPane>
+    </center>
+</BorderPane>

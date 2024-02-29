@@ -1,0 +1,2 @@
+Quiz{text='Cat face 2+2?', raspunsA='4', raspunsB='2', raspunsC='5', raspunsCorect='4', id=3}
+Quiz{text='Ce capitala are Romania', raspunsA='Cluj', raspunsB='Timisoara', raspunsC='Bucuresti', raspunsCorect='Bucuresti', id=4}
