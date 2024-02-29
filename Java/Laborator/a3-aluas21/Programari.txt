@@ -1,0 +1,8 @@
+1 1 Aluas Doru 20 racit 2022-11-21 21:30
+2 1 Aluas Doru 20 bolnav 2023-12-21 21:00
+3 2 Bucila Mihai 20 racit 2023-02-21 10:20
+4 3 Beledean Stefania 29 bolnav 2023-04-21 11:30
+5 2 Bucila Mihai 20 racit 2023-04-21 14:45
+6 3 Beledean Stefania 29 racit 2023-04-21 17:10
+7 4 Badescu Alexandra 39 racit 2023-10-21 20:32
+8 1 Aluas Doru 20 jnhbh 2023-11-20 12:12
