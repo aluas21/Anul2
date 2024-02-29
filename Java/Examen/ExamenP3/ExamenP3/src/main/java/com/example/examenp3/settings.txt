@@ -1,4 +1,0 @@
- repo_type: db
- repo_file1: /Volumes/Macintosh HD/Desktop/PROGRAMARE/MAP/a4-aluas21/src/main/java/Pacienti.txt
- repo_file2: /Volumes/Macintosh HD/Desktop/PROGRAMARE/MAP/a4-aluas21/src/main/java/Programari.txt
-            
